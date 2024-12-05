@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://c1fbp8f78yhl4"]
+[gd_scene load_steps=46 format=4 uid="uid://c1fbp8f78yhl4"]
 
 [ext_resource type="Texture2D" uid="uid://n77upwcdswdr" path="res://ressources/tilesheets/background.png" id="1_qxvs0"]
 [ext_resource type="Texture2D" uid="uid://umkp27l3km5s" path="res://ressources/tilesheets/props.png" id="2_8e8o0"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b6gy6e6oik568" path="res://scenes/CheckPoints/check_points.tscn" id="4_hf2id"]
 [ext_resource type="PackedScene" uid="uid://bx8yvv1vvi0fe" path="res://scenes/CheckPoints/out_of_bound.tscn" id="5_cqitu"]
 [ext_resource type="Texture2D" uid="uid://gs5kit0s4oxr" path="res://ressources/images/light.png" id="5_twvda"]
+[ext_resource type="Script" path="res://ressources/scripts/Light_lantern.gd" id="8_cm6n5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rklpk"]
 texture = ExtResource("1_qxvs0")
@@ -531,6 +532,142 @@ collision_enabled = false
 use_kinematic_bodies = true
 metadata/_edit_lock_ = true
 
+[node name="PointLight2D1" type="PointLight2D" parent="Props"]
+position = Vector2(-527.5, -87)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Props"]
+position = Vector2(-48, -55)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Props"]
+position = Vector2(48, -55)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D4" type="PointLight2D" parent="Props"]
+position = Vector2(-848, -375)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Props"]
+position = Vector2(-432, -311)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D6" type="PointLight2D" parent="Props"]
+position = Vector2(368, -87)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D7" type="PointLight2D" parent="Props"]
+position = Vector2(-79, -599)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D8" type="PointLight2D" parent="Props"]
+position = Vector2(145, -471)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D9" type="PointLight2D" parent="Props"]
+position = Vector2(16, -823)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D10" type="PointLight2D" parent="Props"]
+position = Vector2(145, -823)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D11" type="PointLight2D" parent="Props"]
+position = Vector2(273, -823)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D12" type="PointLight2D" parent="Props"]
+position = Vector2(592, -503)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D13" type="PointLight2D" parent="Props"]
+position = Vector2(785, -183)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D14" type="PointLight2D" parent="Props"]
+position = Vector2(1073, -567)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D15" type="PointLight2D" parent="Props"]
+position = Vector2(1456, -663)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D16" type="PointLight2D" parent="Props"]
+position = Vector2(2033, -631)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
+[node name="PointLight2D17" type="PointLight2D" parent="Props"]
+position = Vector2(-1840, -183)
+scale = Vector2(0.46875, 0.5)
+color = Color(0.196078, 0.286275, 0.243137, 1)
+energy = 3.0
+texture = ExtResource("5_twvda")
+script = ExtResource("8_cm6n5")
+
 [node name="Level" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD//wIAAwACAAEAAAAAAAIAAwABAAEAAAAAAAMAAwAKAAEAAAABAAIAAwABAAIAAAABAAMAAwACAAEAAAACAAIAAwACAAEAAAACAAMAAwAGAAEAAAD+/wMAAwADAAQAAAADAAEAAwAEAAEAAAADAAIAAwAEAAEAAAADAAMAAwAEAAQAAAADAAAAAwAEAAAAAAAFAAAAAwAAAAAAAAAGAAAAAwAGAAAAAAAHAAAAAwAHAAAAAAAIAAAAAwAJAAAAAAAJAAAAAwAKAAAAAAAKAAAAAwACAAAAAAALAAAAAwABAAAAAAAFAAEAAwAAAAEAAAAFAAIAAwAAAAIAAAAFAAMAAwAAAAEAAAAFAAQAAwAAAAQAAAAMAAEAAwAEAAIAAAAMAAIAAwAEAAEAAAAMAAMAAwAEAAIAAAAMAAQAAwAEAAQAAAAGAAEAAwACAAIAAAAGAAIAAwACAAEAAAAGAAMAAwACAAEAAAAGAAQAAwABAAQAAAAHAAEAAwABAAEAAAAHAAIAAwABAAIAAAAHAAMAAwACAAEAAAAHAAQAAwAKAAEAAAAIAAEAAwACAAEAAAAIAAIAAwACAAEAAAAIAAMAAwACAAIAAAAIAAQAAwABAAEAAAAIAAUAAwABAAQAAAAJAAEAAwACAAEAAAAJAAIAAwACAAEAAAAJAAMAAwABAAEAAAAJAAQAAwABAAIAAAAJAAUAAwAKAAEAAAAJAAYAAwAAAAEAAAAJAAcAAwAAAAQAAAAKAAEAAwADAAEAAAAKAAIAAwADAAIAAAAKAAMAAwADAAMAAAAKAAQAAwACAAMAAAAKAAUAAwABAAEAAAAKAAYAAwABAAEAAAAKAAcAAwABAAQAAAALAAEAAwABAAEAAAALAAIAAwACAAEAAAALAAMAAwABAAEAAAALAAQAAwAGAAEAAAALAAUAAwAEAAEAAAALAAYAAwAEAAEAAAALAAcAAwAEAAQAAAAMAAAAAwAEAAAAAAAOAP//AwAAAAUAAAAPAP//AwABAAUAAAAQAP//AwABAAUAAAARAP//AwABAAUAAAASAP//AwACAAUAAAATAP//AwADAAUAAAAUAP//AwADAAUAAAAVAP//AwACAAUAAAAWAP//AwABAAUAAAAXAP//AwAEAAUAAAALAP7/AwAEAAUAAAAJAP3/AwAAAAUAAAAKAP3/AwAEAAUAAAALAPv/AwAAAAUAAAAMAPv/AwAEAAUAAAAKAP7/AwAAAAUAAAAPAPv/AwAAAAUAAAAQAPv/AwAEAAUAAAATAPv/AwAAAAUAAAAUAPv/AwABAAUAAAAVAPv/AwAEAAUAAAAXAPz/AwAAAAQAAAAXAPv/AwAAAAAAAAAYAPv/AwABAAAAAAAZAPv/AwACAAAAAAAaAPv/AwADAAAAAAAYAPz/AwABAAQAAAAZAPz/AwACAAQAAAAaAPz/AwADAAQAAAAbAPz/AwAEAAQAAAAbAPv/AwAEAAAAAAD+/wIAAwABAAMAAAD//wMAAwACAAQAAAD9/wIAAwAAAAMAAAD9/wMAAwAAAAQAAAAHAAUAAwAAAAQAAAAAAAQAAwAAAAQAAAABAAQAAwABAAQAAAACAAQAAwAEAAQAAAAeAPv/AwAAAAUAAAAfAPv/AwAEAAUAAAAjAPv/AwAAAAUAAAAkAPv/AwAEAAUAAAApAAUAAwAAAAUAAAAqAAUAAwAEAAUAAAAsAAQAAwAAAAUAAAAtAAQAAwAEAAUAAAAvAAMAAwAAAAUAAAAwAAMAAwAEAAUAAAAyAAIAAwAAAAUAAAAzAAIAAwAEAAUAAAA1AAEAAwAAAAUAAAA2AAEAAwAEAAUAAAA4AAAAAwAAAAUAAAA5AAAAAwAEAAUAAAA7AP//AwAAAAUAAAA8AP//AwAEAAUAAAA+AP7/AwAAAAUAAAA/AP7/AwAEAAUAAABBAP3/AwAAAAUAAABCAP3/AwAEAAUAAABEAAUAAwAAAAUAAABFAAUAAwAEAAUAAABFABMAAwAAAAUAAABGABMAAwACAAUAAABHABMAAwAEAAUAAAD4/wAAAwAAAAAAAAD5/wAAAwACAAAAAAD6/wAAAwAEAAAAAAD4/wEAAwAAAAEAAAD4/wIAAwAAAAQAAAD5/wEAAwACAAEAAAD5/wIAAwADAAQAAAD6/wEAAwAEAAEAAAD6/wIAAwAEAAQAAAD1////AwADAAAAAAD2////AwAEAAAAAADy////AwAIAAAAAADz////AwAJAAAAAAD0////AwAKAAAAAADx////AwAHAAAAAADw////AwAGAAAAAADv////AwABAAAAAADu////AwADAAAAAADt////AwABAAAAAADs////AwADAAAAAADs/wAAAwAKAAEAAAD2/wAAAwAEAAEAAAD1/wEAAwAGAAEAAADv/wEAAwAKAAEAAAD2/wEAAwAEAAQAAADs/wEAAwAAAAQAAADt/wEAAwABAAQAAADu/wEAAwACAAQAAADw/wIAAwABAAQAAADx/wIAAwACAAQAAADy/wIAAwADAAQAAADz/wIAAwABAAQAAAD0/wIAAwADAAQAAAD1/wIAAwAEAAQAAADv/wIAAwAAAAQAAADt/wAAAwABAAEAAADu/wAAAwACAAMAAADv/wAAAwABAAEAAADw/wAAAwACAAEAAADx/wAAAwABAAEAAADy/wAAAwACAAMAAADz/wAAAwABAAEAAAD0/wAAAwABAAIAAAD1/wAAAwACAAEAAADw/wEAAwABAAEAAADx/wEAAwACAAMAAADy/wEAAwABAAEAAADz/wEAAwACAAIAAAD0/wEAAwACAAMAAADo/wAAAwABAAAAAADo/wEAAwABAAEAAADn/wAAAwAKAAAAAADm/wAAAwAIAAAAAADl/wAAAwAGAAAAAADk/wAAAwAHAAEAAADi/wEAAwACAAAAAADh/wEAAwALAAIAAADg/wEAAwAAAAEAAADf/wAAAwABAAQAAADf////AwABAAAAAADe////AwAAAAAAAADe/wIAAwALAAAAAADg/wIAAwAAAAQAAADh/wIAAwADAAQAAADi/wIAAwABAAQAAADj/wIAAwACAAQAAADk/wIAAwADAAQAAADl/wIAAwADAAQAAADm/wIAAwABAAQAAADo/wIAAwADAAQAAADn/wIAAwACAAQAAADd/wQAAwAAAAEAAADe/wQAAwALAAIAAADf/wQAAwABAAAAAADg/wQAAwACAAAAAADh/wQAAwACAAAAAADi/wQAAwADAAAAAADj/wQAAwACAAAAAADk/wQAAwADAAAAAADl/wQAAwADAAAAAADm/wQAAwACAAAAAADn/wQAAwADAAAAAADo/wQAAwABAAAAAADd/wYAAwAAAAQAAADe/wYAAwABAAQAAADf/wYAAwACAAQAAADg/wYAAwACAAQAAADh/wYAAwADAAQAAADi/wYAAwABAAQAAADj/wYAAwACAAQAAADk/wYAAwADAAQAAADl/wYAAwACAAQAAADm/wYAAwACAAQAAADn/wYAAwABAAQAAADo/wYAAwADAAQAAADo/wUAAwACAAEAAADd/wUAAwAAAAEAAADe/wUAAwABAAEAAADf/wUAAwACAAEAAADg/wUAAwACAAIAAADh/wUAAwABAAEAAADi/wUAAwACAAEAAADj/wUAAwACAAMAAADk/wUAAwABAAIAAADl/wUAAwACAAEAAADm/wUAAwACAAMAAADn/wUAAwABAAEAAADj/wEAAwABAAAAAADk/wEAAwAHAAIAAADl/wEAAwABAAEAAADm/wEAAwACAAEAAADn/wEAAwACAAIAAADd/wIAAwAHAAEAAADd/wMAAwAFAAEAAADe/wMAAwALAAEAAADg////AwADAAAAAADg/wAAAwAKAAEAAADh////AwALAAAAAADh/wAAAwALAAEAAADp/wAAAwACAAAAAADp/wEAAwACAAEAAADp/wIAAwACAAQAAADp/wQAAwADAAAAAADp/wUAAwACAAMAAADp/wYAAwACAAQAAADq/wAAAwAEAAAAAADq/wEAAwALAAIAAADq/wQAAwAEAAAAAADq/wUAAwAEAAEAAADq/wYAAwAEAAQAAADe/wAAAwAAAAQAAADr////AwAAAAAAAADr/wAAAwAAAAQAAADr/wEAAwAJAAIAAADr/wIAAwAEAAQAAADq/wIAAwACAAQAAADs/wQAAwAAAAUAAADt/wQAAwABAAUAAADu/wQAAwACAAUAAADv/wQAAwADAAUAAADw/wQAAwAEAAUAAADa/wUAAwAEAAAAAADZ/wUAAwAFAAAAAADY/wYAAwAFAAAAAADZ/wYAAwAFAAIAAADY/wcAAwAFAAIAAADX/wgAAwAFAAIAAADW/wkAAwAFAAIAAADX/wcAAwAFAAAAAADW/wgAAwAFAAAAAADV/wkAAwAFAAAAAADU/wcAAwAEAAUAAADT/wcAAwADAAUAAADS/wcAAwAAAAUAAADV/woAAwAHAAIAAADV/wsAAwABAAQAAADW/wsAAwAEAAQAAADX/woAAwAEAAQAAADY/wkAAwAEAAQAAADZ/wcAAwAGAAEAAADZ/wgAAwAEAAQAAADa/wcAAwAEAAQAAADW/woAAwAGAAEAAADX/wkAAwAGAAEAAADY/wgAAwAGAAEAAADa/wYAAwAEAAEAAAD9/wAAAwAAAAAAAAD9/wEAAwAAAAEAAAD+/wAAAwABAAAAAAD+/wEAAwABAAIAAAD//wAAAwABAAAAAAD//wEAAwABAAEAAAAAAAAAAwACAAAAAAAAAAEAAwACAAIAAAABAAAAAwABAAAAAAABAAEAAwACAAEAAAACAAAAAwACAAAAAAACAAEAAwABAAEAAAD0//j/AwACAAEAAAD1//j/AwACAAMAAAD2//j/AwABAAEAAAD3//j/AwABAAEAAAD4//j/AwACAAEAAAD5//j/AwACAAMAAAD6//j/AwACAAEAAAD6//f/AwACAAEAAAD7//f/AwALAAIAAAD7//j/AwABAAEAAAD5//f/AwACAAMAAAD4//f/AwACAAIAAAD3//f/AwACAAEAAAD2//f/AwABAAIAAAD1//f/AwABAAIAAAD0//f/AwACAAEAAAD7//n/AwACAAEAAAD6//n/AwACAAEAAAD5//n/AwABAAEAAAD4//n/AwACAAEAAAD3//n/AwACAAEAAAD2//n/AwAKAAEAAAD1//n/AwABAAQAAAD0//n/AwADAAQAAAD0//b/AwAFAAIAAAD1//X/AwADAAAAAAD2//X/AwAFAAIAAAD0//X/AwAGAAIAAAD1//b/AwACAAEAAAD2//b/AwABAAEAAAD3//b/AwACAAMAAAD4//b/AwACAAEAAAD5//b/AwABAAEAAAD6//b/AwACAAEAAAD7//b/AwALAAEAAAD7//X/AwAIAAEAAAD6//X/AwACAAAAAAD5//X/AwALAAIAAAD4//X/AwABAAIAAAD3//X/AwABAAEAAADz//f/AwAFAAIAAADy//f/AwADAAAAAADy//j/AwACAAEAAADz//j/AwACAAIAAADz//n/AwACAAQAAADy//n/AwAGAAEAAAD8//j/AwALAAIAAAD9//j/AwABAAAAAAD+//j/AwAJAAIAAAD+//n/AwAEAAEAAAD9//n/AwACAAIAAAD8//n/AwABAAEAAAD7//r/AwACAAIAAAD8//r/AwAGAAEAAAD9//r/AwACAAQAAAD+//r/AwAEAAQAAAD6//r/AwACAAIAAAD5//r/AwABAAEAAAD4//r/AwABAAIAAAD3//r/AwACAAEAAAAIAPn/AwAEAAUAAAAHAPn/AwAAAAUAAAD8//f/AwAEAAAAAAACAPX/AwAAAAQAAAADAPX/AwABAAQAAAAEAPX/AwABAAQAAAAFAPX/AwADAAQAAAAGAPX/AwABAAQAAAAHAPX/AwAEAAQAAAAHAPT/AwAGAAEAAAAGAPT/AwABAAEAAAAFAPT/AwACAAIAAAAEAPT/AwABAAIAAAADAPT/AwAFAAIAAAACAPT/AwAAAAAAAAAHAPP/AwACAAEAAAAIAPP/AwABAAEAAAAIAPL/AwABAAIAAAAJAPL/AwABAAIAAAAJAPP/AwAGAAEAAAAJAPT/AwAEAAQAAAAIAPT/AwABAAQAAAAKAPP/AwAEAAQAAAAKAPL/AwAGAAEAAAAKAPH/AwABAAIAAAAJAPH/AwABAAIAAAAIAPH/AwACAAMAAAAHAPH/AwACAAEAAAAHAPL/AwACAAMAAAAGAPL/AwAFAAIAAAAGAPP/AwABAAIAAAAFAPP/AwAFAAIAAAAEAPP/AwACAAAAAAADAPP/AwAAAAAAAAAIAPD/AwABAAIAAAAIAO//AwACAAIAAAAJAO//AwACAAMAAAAKAO//AwACAAIAAAAKAO7/AwACAAEAAAALAO7/AwACAAMAAAALAO//AwACAAMAAAAJAPD/AwACAAEAAAALAPD/AwACAAIAAAALAPH/AwACAAMAAAAMAO7/AwACAAMAAAAMAO//AwACAAIAAAAMAPD/AwABAAEAAAAMAPH/AwACAAIAAAALAPL/AwADAAQAAAAIAO7/AwAFAAIAAAAIAO3/AwAAAAAAAAAJAO3/AwAGAAAAAAAKAO3/AwAKAAAAAAALAO3/AwABAAAAAAAJAO7/AwACAAMAAAAMAO3/AwAFAAIAAAANAO7/AwACAAEAAAANAO//AwACAAEAAAANAPD/AwAGAAEAAAAHAPD/AwAFAAIAAAAHAO//AwAAAAIAAAAFAPL/AwAGAAIAAAAHAO7/AwAGAAIAAAD8//L/AwAAAAQAAAD9//L/AwADAAQAAAD+//L/AwAEAAQAAAD+//H/AwAGAAEAAAD///H/AwABAAQAAAAAAPH/AwADAAQAAAABAPH/AwAEAAQAAAABAPD/AwAJAAIAAAAAAPD/AwABAAAAAAD///D/AwALAAIAAAD+//D/AwAFAAIAAAD9//D/AwACAAAAAAD9//H/AwACAAMAAAD8//H/AwAAAAIAAAD8//D/AwAAAAAAAAATAOz/AwAGAAEAAAASAO3/AwADAAQAAAASAOz/AwACAAIAAAARAO3/AwACAAQAAAARAOz/AwAFAAIAAAAWAOv/AwACAAQAAAAWAOr/AwABAAEAAAAVAOv/AwAGAAEAAAAVAOr/AwAFAAIAAAAUAOv/AwABAAEAAAAUAOr/AwADAAAAAAAZAOv/AwAEAAQAAAAZAOr/AwAEAAEAAAAZAOn/AwAEAAIAAAAZAOj/AwAJAAIAAAAYAOv/AwABAAQAAAAYAOr/AwACAAEAAAAYAOn/AwAFAAIAAAAYAOj/AwAGAAIAAAAXAOr/AwABAAIAAAAXAOn/AwACAAAAAAAWAOn/AwADAAAAAAAVAOn/AwAAAAAAAAATAOv/AwAFAAIAAAATAOr/AwAGAAIAAAASAOv/AwADAAAAAAARAOv/AwAGAAIAAAAQAO7/AwAEAAQAAAAQAO3/AwAGAAEAAAAQAOz/AwACAAAAAAAPAO//AwAEAAQAAAAPAO7/AwAGAAEAAAAPAO3/AwABAAEAAAAPAOz/AwABAAAAAAAOAPD/AwAEAAQAAAAOAO//AwAGAAEAAAAOAO7/AwABAAEAAAAOAO3/AwABAAEAAAAOAOz/AwAKAAAAAAANAPL/AwAEAAQAAAANAPH/AwAEAAIAAAANAO3/AwABAAIAAAANAOz/AwAGAAAAAAAMAPL/AwACAAQAAAAMAOz/AwAGAAIAAAAXAOv/AwADAAQAAAAKAPD/AwABAAEAAAAGAPH/AwAAAAEAAAAGAPD/AwAGAAIAAAD3//P/AwABAAUAAAD4//P/AwACAAUAAAD5//P/AwAEAAUAAAD2//P/AwAAAAUAAAABAP7/AwAAAAUAAAACAP7/AwADAAUAAAADAP7/AwADAAUAAAAEAP7/AwAEAAUAAAAAAPn/AwAAAAUAAAABAPn/AwAEAAUAAAD///v/AwAAAAUAAAAAAPv/AwABAAUAAAABAPv/AwACAAUAAAACAPv/AwADAAUAAAADAPv/AwAEAAUAAAD4//H/AwAAAAUAAAD5//H/AwADAAUAAAD6//H/AwAEAAUAAAACAO7/AwACAAUAAAADAO7/AwADAAUAAAAEAO7/AwAEAAUAAAABAO7/AwAAAAUAAAD+/+//AwAGAAIAAAD//+//AwAEAAAAAADp//f/AwAEAAIAAADo//f/AwACAAEAAADr//X/AwACAAMAAADr//T/AwAIAAAAAADq//X/AwACAAEAAADq//T/AwAGAAAAAADp//X/AwACAAEAAADp//T/AwADAAAAAADo//X/AwAFAAIAAADo//T/AwAGAAIAAADp//b/AwAGAAEAAADo//b/AwACAAIAAADm//X/AwAGAAIAAADn//X/AwABAAAAAADl//f/AwABAAIAAADl//b/AwACAAAAAADr//b/AwAKAAEAAADq//b/AwABAAQAAADt//j/AwACAAMAAADt//f/AwACAAEAAADt//b/AwABAAIAAADt//X/AwALAAIAAADt//T/AwAEAAAAAADs//j/AwACAAEAAADs//f/AwACAAIAAADs//b/AwACAAIAAADs//X/AwACAAEAAADs//T/AwAKAAAAAADx//j/AwABAAEAAADx//f/AwACAAAAAADw//j/AwABAAEAAADw//f/AwALAAIAAADv//j/AwACAAMAAADv//f/AwACAAMAAADu//j/AwABAAEAAADu//f/AwACAAMAAADn//n/AwACAAMAAADn//j/AwACAAEAAADn//f/AwABAAIAAADn//b/AwACAAMAAADm//n/AwACAAMAAADm//j/AwABAAIAAADm//f/AwACAAIAAADm//b/AwAFAAIAAADl//n/AwACAAIAAADl//j/AwACAAEAAADk//n/AwABAAEAAADk//j/AwAFAAIAAADk//f/AwAAAAIAAADk//b/AwAGAAIAAADp//j/AwAEAAIAAADo//j/AwABAAEAAADv//r/AwACAAEAAADv//n/AwACAAEAAADv//b/AwACAAAAAADu//r/AwABAAEAAADu//n/AwABAAEAAADu//b/AwALAAIAAADt//r/AwACAAEAAADt//n/AwABAAEAAADs//r/AwAKAAEAAADs//n/AwACAAEAAADr//r/AwAAAAQAAADr//n/AwAAAAIAAADr//j/AwAAAAEAAADr//f/AwAAAAIAAADy//r/AwAEAAQAAADx//r/AwAGAAEAAADx//n/AwACAAIAAADw//r/AwACAAEAAADw//n/AwACAAEAAADz//b/AwAGAAIAAAD3//T/AwADAAAAAAD4//T/AwADAAAAAAD5//T/AwAEAAAAAAD2//T/AwAAAAAAAADu//X/AwAEAAAAAADw//b/AwAJAAIAAADp//n/AwAEAAQAAADo//n/AwAGAAEAAADo//v/AwAEAAQAAADo//r/AwAEAAEAAADn//v/AwADAAQAAADn//r/AwABAAIAAADm//v/AwAGAAEAAADm//r/AwACAAMAAADl//v/AwACAAMAAADl//r/AwABAAEAAADl//3/AwACAAQAAADl//z/AwACAAIAAADk//3/AwABAAQAAADk//z/AwACAAMAAADk//v/AwACAAMAAADk//r/AwACAAEAAADj//3/AwAAAAQAAADj//z/AwAAAAIAAADj//v/AwAAAAIAAADj//r/AwAAAAEAAADj//n/AwAAAAIAAADj//j/AwAGAAIAAADm//3/AwAEAAQAAADm//z/AwAEAAEAAADx//v/AwAEAAQAAADw//v/AwABAAQAAADv//v/AwADAAQAAADu//v/AwABAAQAAADt//v/AwACAAQAAADs//v/AwAAAAQAAAD5//v/AwACAAIAAAD4//v/AwAKAAEAAAD3//v/AwADAAQAAAD2//v/AwAAAAQAAAD2//r/AwAAAAIAAAD7//v/AwACAAQAAAD6//v/AwAGAAEAAAD8//v/AwAEAAQAAAD6//z/AwAEAAQAAAD5//z/AwADAAQAAAD4//z/AwAAAAQAAADy//P/AwAEAAAAAADx//T/AwAAAAQAAADx//P/AwAAAAAAAADy//T/AwAEAAQAAADi//b/AwAEAAQAAADi//X/AwAEAAAAAADh//b/AwAAAAQAAADh//X/AwAAAAAAAADg//j/AwAEAAQAAADg//f/AwAEAAAAAADf//j/AwADAAQAAADf//f/AwABAAAAAADe//j/AwAAAAQAAADe//f/AwAAAAAAAADc//r/AwAJAAIAAADb//r/AwAAAAAAAADc//v/AwAEAAQAAADb//v/AwAAAAQAAADf//3/AwAEAAQAAADe//3/AwAAAAQAAADf//z/AwAEAAAAAADe//z/AwAAAAAAAADb//j/AwAEAAUAAADa//j/AwADAAUAAADZ//j/AwAAAAUAAADa//7/AwAAAAUAAADc//7/AwAEAAUAAADb//7/AwACAAUAAADb/wQAAwAAAAUAAADc/wQAAwAEAAUAAADV/wIAAwAAAAUAAADY/wIAAwAEAAUAAADX/wIAAwABAAUAAADW/wIAAwACAAUAAADX//7/AwAEAAUAAADW//7/AwAAAAUAAAAUAOz/AwABAAQAAAATAO3/AwAEAAQAAAAVAOz/AwAEAAQAAAALAPf/AwAAAAUAAAAPAPP/AwAGAAIAAAAQAPL/AwAGAAIAAAAQAPP/AwAFAAIAAAARAPL/AwABAAAAAAARAPP/AwABAAIAAAARAPT/AwAKAAEAAAASAPL/AwABAAAAAAASAPP/AwABAAEAAAASAPT/AwABAAIAAAATAPH/AwAAAAAAAAATAPL/AwAFAAIAAAATAPP/AwABAAEAAAATAPT/AwACAAIAAAAUAPH/AwACAAAAAAAUAPL/AwACAAEAAAAUAPP/AwACAAIAAAAUAPT/AwABAAEAAAAVAPH/AwACAAAAAAAVAPL/AwACAAMAAAAVAPP/AwABAAIAAAAVAPT/AwAGAAEAAAAWAPD/AwAGAAIAAAAWAPH/AwAFAAIAAAAWAPL/AwABAAEAAAAWAPP/AwABAAEAAAAXAO//AwAGAAIAAAAXAPD/AwAFAAIAAAAXAPH/AwABAAEAAAAXAPL/AwACAAMAAAAXAPP/AwACAAMAAAAYAO//AwADAAAAAAAYAPD/AwACAAEAAAAYAPH/AwACAAEAAAAYAPL/AwACAAEAAAAYAPP/AwAGAAEAAAAZAO//AwAIAAEAAAAZAPD/AwAIAAIAAAAZAPH/AwABAAEAAAAZAPL/AwAGAAEAAAAaAPD/AwADAAAAAAAPAPT/AwAAAAQAAAAQAPT/AwABAAQAAAARAPX/AwAAAAQAAAASAPX/AwABAAQAAAATAPX/AwADAAQAAAAUAPX/AwACAAQAAAAVAPX/AwAEAAQAAAAWAPT/AwABAAQAAAAXAPT/AwACAAQAAAAYAPT/AwAEAAQAAAAZAPP/AwAEAAQAAAAaAPH/AwACAAMAAAANAPf/AwAEAAUAAAAMAPf/AwACAAUAAAANAPX/AwAAAAUAAAAOAPX/AwAEAAUAAADJ////AwAFAAAAAADJ/wAAAwAAAAEAAADK////AwAGAAAAAADL////AwAHAAAAAADM////AwAIAAAAAADN////AwAJAAAAAADO////AwAKAAAAAADP////AwALAAAAAADP/wAAAwAIAAIAAADK/wEAAwABAAEAAADL/wAAAwACAAEAAADM/wEAAwACAAEAAADM/wAAAwACAAEAAADO/wAAAwACAAEAAADL/wIAAwABAAIAAADN/wIAAwADAAIAAADN/wAAAwADAAEAAADN/wEAAwADAAIAAADK/wAAAwABAAEAAADL/wEAAwABAAEAAADJ/wEAAwAAAAIAAADJ/wIAAwAAAAMAAADK/wIAAwABAAEAAADP/wIAAwABAAIAAADN/wMAAwADAAMAAADJ/wQAAwAAAAQAAADJ/wMAAwAAAAIAAADO/wMAAwABAAIAAADP/wMAAwABAAIAAADK/wMAAwABAAIAAADO/wEAAwABAAMAAADL/wMAAwACAAIAAADO/wIAAwACAAIAAADM/wIAAwACAAIAAADM/wMAAwACAAMAAADL/wQAAwACAAQAAADK/wQAAwABAAQAAADM/wQAAwADAAQAAADN/wQAAwABAAQAAADO/wQAAwACAAQAAADQ/wEAAwAIAAIAAADQ/wAAAwALAAAAAADQ/wIAAwACAAEAAADQ/wMAAwACAAIAAADQ/wQAAwACAAQAAADP/wQAAwABAAQAAADP/wEAAwACAAMAAADU/woAAwACAAAAAADT/woAAwABAAAAAADQ/woAAwABAAAAAADR/woAAwACAAAAAADS/woAAwADAAAAAADQ/wsAAwAAAAQAAADR/wsAAwADAAQAAADS/wsAAwABAAQAAADT/wsAAwACAAQAAADU/wsAAwADAAQAAAAfAPD/AwABAAAAAAAfAPH/AwACAAEAAAAfAPL/AwACAAMAAAAfAPP/AwAKAAEAAAAfAPT/AwAAAAQAAAAgAPD/AwABAAAAAAAgAPH/AwABAAEAAAAgAPL/AwABAAIAAAAgAPP/AwABAAMAAAAgAPT/AwABAAQAAAAhAPD/AwACAAAAAAAhAPH/AwACAAEAAAAhAPL/AwACAAIAAAAhAPP/AwACAAMAAAAhAPT/AwAKAAEAAAAiAPD/AwADAAAAAAAiAPH/AwADAAEAAAAiAPL/AwADAAIAAAAiAPP/AwADAAMAAAAiAPT/AwABAAIAAAAjAPD/AwAEAAAAAAAjAPH/AwAIAAIAAAAjAPL/AwABAAEAAAAjAPP/AwABAAEAAAAjAPT/AwAGAAEAAAAeAPD/AwAIAAIAAAAbAPD/AwADAAAAAAAcAPD/AwAHAAIAAAAcAO//AwAHAAEAAAAeAO//AwAIAAEAAAAdAO//AwACAAAAAAAdAPL/AwAKAAEAAAAbAPL/AwABAAQAAAAbAPH/AwABAAMAAAAdAPD/AwABAAMAAAAaAPL/AwABAAQAAAAdAPP/AwAAAAQAAAAcAPL/AwACAAQAAAAeAPH/AwACAAIAAAAdAPH/AwACAAEAAAAeAPL/AwACAAMAAAAcAPH/AwABAAEAAAAeAPP/AwADAAQAAAAhAPX/AwAAAAQAAAAiAPX/AwABAAEAAAAiAPb/AwAAAAQAAAAjAPb/AwAEAAQAAAAjAPX/AwAEAAEAAAAkAPH/AwALAAAAAAAlAPL/AwALAAAAAAAkAPL/AwAIAAIAAAAkAPP/AwACAAEAAAAlAPP/AwALAAEAAAAlAPT/AwAEAAQAAAAkAPT/AwADAAQAAAAcAOr/AwAEAAUAAAAbAOr/AwAAAAUAAAAeAOz/AwAAAAUAAAAgAOz/AwAEAAUAAAAfAOz/AwACAAUAAAAkAO3/AwAEAAUAAAAjAO3/AwAAAAUAAADR/wMAAwAEAAEAAADR/wIAAwAEAAIAAADR/wEAAwALAAAAAADR/wQAAwAEAAQAAADF//v/AwAAAAAAAADF//z/AwAAAAQAAADG//v/AwAEAAAAAADG//z/AwAEAAQAAADK//X/AwAFAAAAAADK//b/AwAFAAEAAADL//T/AwAFAAAAAADL//X/AwABAAIAAADL//b/AwABAAIAAADL//f/AwAKAAEAAADM//T/AwABAAAAAADM//X/AwABAAEAAADM//b/AwABAAIAAADM//f/AwABAAMAAADN//T/AwACAAAAAADN//X/AwACAAEAAADN//b/AwACAAIAAADN//f/AwACAAMAAADO//T/AwABAAAAAADO//X/AwABAAEAAADO//b/AwABAAIAAADO//f/AwABAAMAAADP//T/AwACAAAAAADP//X/AwACAAEAAADP//b/AwACAAIAAADP//f/AwACAAMAAADQ//T/AwADAAAAAADQ//X/AwADAAEAAADQ//b/AwADAAIAAADQ//f/AwADAAMAAADR//T/AwAIAAEAAADR//X/AwAIAAIAAADR//b/AwACAAIAAADR//f/AwABAAIAAADS//X/AwAIAAEAAADS//b/AwAIAAIAAADS//f/AwACAAIAAADT//b/AwAIAAEAAADT//f/AwAIAAIAAADU//f/AwAIAAEAAADK//f/AwAAAAQAAADL//j/AwAAAAQAAADM//j/AwACAAQAAADN//j/AwAKAAEAAADO//j/AwABAAEAAADP//j/AwABAAEAAADQ//j/AwACAAEAAADR//j/AwACAAMAAADS//j/AwAGAAEAAADT//j/AwABAAQAAADU//j/AwAEAAQAAAAoAPv/AwAAAAAAAAAoAPz/AwAAAAQAAAApAPv/AwAEAAAAAAApAPz/AwAEAAQAAAAxAPr/AwAAAAAAAAAyAPr/AwAEAAAAAAAxAPv/AwAAAAQAAAAyAPv/AwAEAAQAAAAsAPn/AwAAAAAAAAAtAPn/AwABAAAAAAAsAPr/AwAAAAQAAAAtAPr/AwADAAQAAAAoAPP/AwAAAAAAAAAoAPT/AwAAAAQAAAApAPP/AwABAAAAAAApAPT/AwADAAQAAAAqAPP/AwAEAAAAAAAqAPT/AwAEAAQAAAAuAPn/AwAEAAAAAAAuAPr/AwAEAAQAAAA0APL/AwAAAAAAAAA0APP/AwAAAAQAAAA1APL/AwABAAAAAAA1APP/AwADAAQAAAA2APL/AwADAAAAAAA2APP/AwACAAQAAAAuAPX/AwAAAAAAAAAuAPb/AwAAAAQAAAAvAPX/AwAEAAAAAAAvAPb/AwAEAAQAAAA0APj/AwAAAAAAAAA0APn/AwAAAAQAAAA1APj/AwAEAAAAAAA1APn/AwAEAAQAAAAxAPX/AwAAAAAAAAAxAPb/AwAAAAQAAAAyAPX/AwAEAAAAAAAyAPb/AwAEAAQAAAArAO3/AwAAAAAAAAArAO7/AwAAAAQAAAAsAO3/AwABAAAAAAAsAO7/AwADAAQAAAAtAO3/AwAEAAAAAAAtAO7/AwAEAAQAAAAuAO//AwAAAAAAAAAuAPD/AwAAAAQAAAAvAO//AwABAAAAAAAvAPD/AwADAAQAAAAwAO//AwAEAAAAAAAwAPD/AwAEAAQAAABFAPv/AwAFAAAAAABFAPz/AwAFAAEAAABGAPv/AwAGAAAAAABHAPv/AwAHAAAAAABIAPv/AwAIAAAAAABJAPv/AwAJAAAAAABKAPv/AwAKAAAAAABLAPv/AwALAAAAAABLAPz/AwALAAEAAABFAP3/AwAAAAEAAABFAP7/AwAAAAIAAABFAP//AwAAAAMAAABFAAAAAwAAAAQAAABLAP3/AwAEAAEAAABLAP7/AwAEAAIAAABLAP//AwAEAAEAAABLAAAAAwAEAAQAAABHAPz/AwABAAEAAABHAP3/AwABAAIAAABHAP7/AwACAAMAAABIAPz/AwACAAEAAABIAP3/AwACAAIAAABIAP7/AwACAAMAAABJAPz/AwADAAEAAABJAP3/AwADAAIAAABJAP7/AwADAAMAAABGAP7/AwABAAIAAABKAPz/AwABAAEAAABGAPz/AwABAAEAAABGAP3/AwABAAIAAABGAP//AwABAAIAAABIAP//AwABAAIAAABKAP3/AwABAAIAAABHAP//AwACAAMAAABKAP//AwACAAMAAABJAP//AwABAAMAAABKAP7/AwABAAMAAABGAAAAAwAKAAEAAABHAAAAAwACAAEAAABIAAAAAwABAAEAAABJAAAAAwABAAEAAABKAAAAAwAGAAEAAABGAAEAAwAAAAQAAABIAAIAAwAAAAQAAABKAAEAAwAEAAQAAABJAAIAAwAEAAQAAABJAAEAAwAGAAEAAABIAAEAAwAKAAEAAABHAAEAAwABAAQAAAA3APD/AwAFAAAAAAA3APH/AwAFAAEAAAA3APL/AwAFAAIAAAA4APD/AwABAAAAAAA5APD/AwACAAAAAAA6AO7/AwAFAAAAAAA6AO//AwAFAAEAAAA6APD/AwAFAAIAAAA7AO7/AwABAAAAAAA8AO7/AwAGAAAAAAA8AO//AwACAAEAAAA9AO7/AwAHAAAAAAA3APP/AwADAAQAAAA4APP/AwABAAQAAAA5APP/AwAKAAEAAAA6APP/AwABAAIAAAA7APP/AwABAAIAAAA8APP/AwAEAAIAAAA4APL/AwABAAMAAAA6APH/AwACAAIAAAA8APH/AwABAAMAAAA9APD/AwABAAEAAAA7APD/AwABAAMAAAA5APH/AwABAAEAAAA8APL/AwAGAAEAAAA7AO//AwACAAMAAAA4APH/AwABAAIAAAA6APL/AwACAAMAAAA8APD/AwACAAEAAAA5APL/AwACAAEAAAA9AO//AwABAAIAAAA5APT/AwAAAAQAAAA6APT/AwACAAQAAAA7APT/AwADAAQAAAA7APH/AwABAAIAAAA+AO7/AwAIAAAAAAA/AO7/AwAJAAAAAABAAO7/AwAKAAAAAABAAO//AwABAAIAAABBAO7/AwALAAAAAABBAO//AwALAAEAAABBAPD/AwALAAIAAAA/AO//AwADAAEAAAA/APD/AwADAAIAAAA/APH/AwADAAMAAAA9APL/AwABAAQAAABAAPL/AwABAAQAAABAAPH/AwABAAEAAAA+APD/AwACAAIAAAA9APH/AwABAAMAAAA7APL/AwABAAIAAAA+AO//AwABAAIAAABAAPD/AwABAAMAAAA+APL/AwAKAAEAAAA/APL/AwAGAAEAAAA+APH/AwABAAIAAAA8APT/AwAEAAQAAAA+APP/AwAAAAQAAAA/APP/AwAEAAQAAABBAPL/AwAKAAEAAABCAPH/AwALAAIAAABCAPD/AwALAAAAAABDAPH/AwAEAAAAAABBAPH/AwABAAIAAABJAPX/AwAAAAUAAABKAPX/AwAEAAUAAABGAPf/AwAAAAUAAABHAPf/AwAEAAUAAABKAPn/AwAAAAUAAABLAPn/AwAEAAUAAABGAPP/AwAEAAUAAABFAPP/AwAAAAUAAABDAPL/AwAEAAQAAABCAPL/AwAGAAEAAABCAPP/AwAEAAQAAABBAPP/AwAAAAQAAAAMAOj/AwABAAQAAAANAOj/AwACAAQAAAAOAOj/AwABAAQAAAAPAOj/AwACAAQAAAAQAOj/AwADAAQAAAARAOf/AwAEAAAAAAARAOj/AwAEAAQAAAAQAOX/AwALAAAAAAAQAOb/AwALAAEAAAAQAOf/AwALAAIAAAAPAOT/AwAIAAEAAAAPAOX/AwAIAAIAAAAKAOn/AwACAAQAAAAKAOj/AwAFAAIAAAANAOf/AwADAAMAAAAOAOb/AwABAAMAAAAPAOf/AwACAAEAAAANAOb/AwADAAIAAAAOAOf/AwABAAIAAAAPAOb/AwACAAEAAAACAOj/AwABAAAAAAADAOj/AwACAAAAAAAEAOj/AwADAAAAAAAFAOj/AwABAAAAAAAGAOj/AwACAAAAAAAHAOj/AwADAAAAAAAIAOj/AwABAAAAAAAJAOj/AwACAAAAAAAKAOf/AwAFAAAAAAALAOf/AwAFAAIAAAALAOb/AwAFAAAAAAAMAOb/AwAFAAIAAAAMAOf/AwABAAIAAAABAOT/AwAFAAAAAAACAOT/AwABAAAAAAANAOT/AwACAAAAAAAOAOT/AwABAAAAAAAMAOX/AwAKAAEAAAANAOX/AwADAAEAAAAOAOX/AwACAAIAAAABAOX/AwAAAAQAAAACAOX/AwABAAQAAAADAOX/AwACAAQAAAAEAOX/AwADAAQAAAAFAOX/AwABAAQAAAAGAOX/AwACAAQAAAAHAOX/AwADAAQAAAAIAOX/AwABAAQAAAAJAOX/AwACAAQAAAAKAOX/AwADAAQAAAALAOX/AwABAAQAAAD//+j/AwABAAAAAAAAAOj/AwACAAAAAAABAOj/AwADAAAAAAAAAOr/AwAKAAEAAAAAAOv/AwAAAAQAAAABAOr/AwACAAMAAAABAOv/AwADAAQAAAACAOr/AwABAAMAAAACAOv/AwABAAQAAAADAOr/AwACAAIAAAADAOv/AwACAAQAAAAEAOr/AwABAAMAAAAEAOv/AwADAAQAAAAFAOr/AwAGAAEAAAAFAOv/AwAEAAQAAAAGAOr/AwAEAAQAAAD//+r/AwACAAQAAAAAAOn/AwABAAMAAAABAOn/AwABAAMAAAACAOn/AwABAAIAAAADAOn/AwABAAIAAAAEAOn/AwACAAMAAAAFAOn/AwACAAIAAAAGAOn/AwAGAAEAAAAHAOn/AwACAAQAAAAIAOn/AwADAAQAAAAJAOn/AwABAAQAAAALAOj/AwAGAAEAAAALAOn/AwAEAAQAAAD+/+r/AwAAAAQAAAD+/+n/AwAKAAEAAAD+/+j/AwABAAAAAAD9/+j/AwAAAAAAAAD9/+n/AwAAAAQAAAD//+n/AwABAAIAAAAEAOP/AwACAAAAAAAJAOP/AwABAAAAAAAKAOP/AwACAAAAAAALAOP/AwADAAAAAAAGAOL/AwACAAAAAAADAOT/AwAFAAIAAAADAOP/AwAFAAAAAAAFAOP/AwAFAAIAAAAFAOL/AwAFAAAAAAAMAOT/AwAIAAIAAAAMAOP/AwAIAAEAAAAHAOL/AwAIAAEAAAAHAOP/AwAIAAIAAAAHAOT/AwACAAIAAAAIAOP/AwACAAAAAAAEAOT/AwABAAEAAAAKAOT/AwABAAEAAAAGAOP/AwACAAEAAAAGAOT/AwACAAEAAAALAOT/AwACAAEAAAAFAOT/AwABAAMAAAAJAOT/AwABAAMAAAAIAOT/AwACAAMAAADN//n/AwAAAAEAAADN//r/AwAAAAQAAADO//r/AwAKAAEAAADO//v/AwAAAAQAAADP//v/AwABAAQAAADQ//v/AwACAAQAAADR//v/AwADAAQAAADS//v/AwABAAQAAADT//v/AwACAAQAAADU//v/AwAEAAQAAADU//r/AwAEAAQAACDS//n/AwAEAAIAAADS//r/AwAGAAEAAGDT//r/AwAEAAIAAHDO//n/AwACAAMAAADP//n/AwACAAMAAADQ//n/AwACAAMAAADR//r/AwABAAIAAADQ//r/AwABAAMAAADP//r/AwACAAMAAADR//n/AwACAAEAAAA=")
 tile_set = SubResource("TileSet_cpcsr")
@@ -542,12 +679,13 @@ tile_map_data = PackedByteArray("AAD+////AAAAAAAAAQAAAP//AAAAAAAAAQACAP//AAAAAAA
 tile_set = SubResource("TileSet_uaqb0")
 
 [node name="Player" parent="." instance=ExtResource("4_ha0th")]
-position = Vector2(9, 5)
+position = Vector2(1, 10)
 cayote_time_max = 5
 metadata/checkpoint_coordinates = Vector2(0, 0)
 metadata/_edit_group_ = true
 
 [node name="PointLight2D" type="PointLight2D" parent="Player"]
+visible = false
 position = Vector2(0, -42)
 scale = Vector2(0.755, 0.755)
 energy = 3.45
@@ -563,250 +701,250 @@ offset_bottom = -56.0
 horizontal_alignment = 1
 
 [connection signal="body_entered" from="CheckPoint/CheckPoints" to="CheckPoint/CheckPoints" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17989" to="CheckPoint/@Area2D@17989" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17990" to="CheckPoint/@Area2D@17990" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78327" to="CheckPoint/@Area2D@78327" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78328" to="CheckPoint/@Area2D@78328" method="_on_body_entered"]
 [connection signal="body_entered" from="CheckPoint/OutOfBound" to="CheckPoint/OutOfBound" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17991" to="CheckPoint/@Area2D@17991" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17992" to="CheckPoint/@Area2D@17992" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17993" to="CheckPoint/@Area2D@17993" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17994" to="CheckPoint/@Area2D@17994" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17995" to="CheckPoint/@Area2D@17995" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17996" to="CheckPoint/@Area2D@17996" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17997" to="CheckPoint/@Area2D@17997" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17998" to="CheckPoint/@Area2D@17998" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@17999" to="CheckPoint/@Area2D@17999" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18000" to="CheckPoint/@Area2D@18000" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18001" to="CheckPoint/@Area2D@18001" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18002" to="CheckPoint/@Area2D@18002" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18003" to="CheckPoint/@Area2D@18003" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18004" to="CheckPoint/@Area2D@18004" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18005" to="CheckPoint/@Area2D@18005" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18006" to="CheckPoint/@Area2D@18006" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18007" to="CheckPoint/@Area2D@18007" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18008" to="CheckPoint/@Area2D@18008" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18009" to="CheckPoint/@Area2D@18009" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18010" to="CheckPoint/@Area2D@18010" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18011" to="CheckPoint/@Area2D@18011" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18012" to="CheckPoint/@Area2D@18012" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18013" to="CheckPoint/@Area2D@18013" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18014" to="CheckPoint/@Area2D@18014" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18015" to="CheckPoint/@Area2D@18015" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18016" to="CheckPoint/@Area2D@18016" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18017" to="CheckPoint/@Area2D@18017" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18018" to="CheckPoint/@Area2D@18018" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18019" to="CheckPoint/@Area2D@18019" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18020" to="CheckPoint/@Area2D@18020" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18021" to="CheckPoint/@Area2D@18021" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18022" to="CheckPoint/@Area2D@18022" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18023" to="CheckPoint/@Area2D@18023" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18024" to="CheckPoint/@Area2D@18024" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18025" to="CheckPoint/@Area2D@18025" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18026" to="CheckPoint/@Area2D@18026" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18027" to="CheckPoint/@Area2D@18027" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18028" to="CheckPoint/@Area2D@18028" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18029" to="CheckPoint/@Area2D@18029" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18030" to="CheckPoint/@Area2D@18030" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18031" to="CheckPoint/@Area2D@18031" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18032" to="CheckPoint/@Area2D@18032" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18033" to="CheckPoint/@Area2D@18033" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18034" to="CheckPoint/@Area2D@18034" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18035" to="CheckPoint/@Area2D@18035" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18036" to="CheckPoint/@Area2D@18036" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18037" to="CheckPoint/@Area2D@18037" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18038" to="CheckPoint/@Area2D@18038" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18039" to="CheckPoint/@Area2D@18039" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18040" to="CheckPoint/@Area2D@18040" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18041" to="CheckPoint/@Area2D@18041" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18042" to="CheckPoint/@Area2D@18042" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18043" to="CheckPoint/@Area2D@18043" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18044" to="CheckPoint/@Area2D@18044" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18045" to="CheckPoint/@Area2D@18045" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18046" to="CheckPoint/@Area2D@18046" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18047" to="CheckPoint/@Area2D@18047" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18048" to="CheckPoint/@Area2D@18048" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18049" to="CheckPoint/@Area2D@18049" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18050" to="CheckPoint/@Area2D@18050" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18051" to="CheckPoint/@Area2D@18051" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18052" to="CheckPoint/@Area2D@18052" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18053" to="CheckPoint/@Area2D@18053" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18054" to="CheckPoint/@Area2D@18054" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18055" to="CheckPoint/@Area2D@18055" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18056" to="CheckPoint/@Area2D@18056" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18057" to="CheckPoint/@Area2D@18057" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18058" to="CheckPoint/@Area2D@18058" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18059" to="CheckPoint/@Area2D@18059" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18060" to="CheckPoint/@Area2D@18060" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18061" to="CheckPoint/@Area2D@18061" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18062" to="CheckPoint/@Area2D@18062" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18063" to="CheckPoint/@Area2D@18063" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18064" to="CheckPoint/@Area2D@18064" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18065" to="CheckPoint/@Area2D@18065" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18066" to="CheckPoint/@Area2D@18066" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18067" to="CheckPoint/@Area2D@18067" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18068" to="CheckPoint/@Area2D@18068" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18069" to="CheckPoint/@Area2D@18069" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18070" to="CheckPoint/@Area2D@18070" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18071" to="CheckPoint/@Area2D@18071" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18072" to="CheckPoint/@Area2D@18072" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18073" to="CheckPoint/@Area2D@18073" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18074" to="CheckPoint/@Area2D@18074" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18075" to="CheckPoint/@Area2D@18075" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18076" to="CheckPoint/@Area2D@18076" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18077" to="CheckPoint/@Area2D@18077" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18078" to="CheckPoint/@Area2D@18078" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18079" to="CheckPoint/@Area2D@18079" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18080" to="CheckPoint/@Area2D@18080" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18081" to="CheckPoint/@Area2D@18081" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18082" to="CheckPoint/@Area2D@18082" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18083" to="CheckPoint/@Area2D@18083" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18084" to="CheckPoint/@Area2D@18084" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18085" to="CheckPoint/@Area2D@18085" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18086" to="CheckPoint/@Area2D@18086" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18087" to="CheckPoint/@Area2D@18087" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18088" to="CheckPoint/@Area2D@18088" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18089" to="CheckPoint/@Area2D@18089" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18090" to="CheckPoint/@Area2D@18090" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18091" to="CheckPoint/@Area2D@18091" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18092" to="CheckPoint/@Area2D@18092" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18093" to="CheckPoint/@Area2D@18093" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18094" to="CheckPoint/@Area2D@18094" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18095" to="CheckPoint/@Area2D@18095" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18096" to="CheckPoint/@Area2D@18096" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18097" to="CheckPoint/@Area2D@18097" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18098" to="CheckPoint/@Area2D@18098" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18099" to="CheckPoint/@Area2D@18099" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18100" to="CheckPoint/@Area2D@18100" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18101" to="CheckPoint/@Area2D@18101" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18102" to="CheckPoint/@Area2D@18102" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18103" to="CheckPoint/@Area2D@18103" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18104" to="CheckPoint/@Area2D@18104" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18105" to="CheckPoint/@Area2D@18105" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18106" to="CheckPoint/@Area2D@18106" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18107" to="CheckPoint/@Area2D@18107" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18108" to="CheckPoint/@Area2D@18108" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18109" to="CheckPoint/@Area2D@18109" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18110" to="CheckPoint/@Area2D@18110" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18111" to="CheckPoint/@Area2D@18111" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18112" to="CheckPoint/@Area2D@18112" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18113" to="CheckPoint/@Area2D@18113" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18114" to="CheckPoint/@Area2D@18114" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18115" to="CheckPoint/@Area2D@18115" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18116" to="CheckPoint/@Area2D@18116" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18117" to="CheckPoint/@Area2D@18117" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18118" to="CheckPoint/@Area2D@18118" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18119" to="CheckPoint/@Area2D@18119" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18120" to="CheckPoint/@Area2D@18120" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18121" to="CheckPoint/@Area2D@18121" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18122" to="CheckPoint/@Area2D@18122" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18123" to="CheckPoint/@Area2D@18123" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18124" to="CheckPoint/@Area2D@18124" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18125" to="CheckPoint/@Area2D@18125" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18126" to="CheckPoint/@Area2D@18126" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18127" to="CheckPoint/@Area2D@18127" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18128" to="CheckPoint/@Area2D@18128" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18129" to="CheckPoint/@Area2D@18129" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18130" to="CheckPoint/@Area2D@18130" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18131" to="CheckPoint/@Area2D@18131" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18132" to="CheckPoint/@Area2D@18132" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18133" to="CheckPoint/@Area2D@18133" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18134" to="CheckPoint/@Area2D@18134" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18135" to="CheckPoint/@Area2D@18135" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18136" to="CheckPoint/@Area2D@18136" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18137" to="CheckPoint/@Area2D@18137" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18138" to="CheckPoint/@Area2D@18138" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18139" to="CheckPoint/@Area2D@18139" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18140" to="CheckPoint/@Area2D@18140" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18141" to="CheckPoint/@Area2D@18141" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18142" to="CheckPoint/@Area2D@18142" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18143" to="CheckPoint/@Area2D@18143" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18144" to="CheckPoint/@Area2D@18144" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18145" to="CheckPoint/@Area2D@18145" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18146" to="CheckPoint/@Area2D@18146" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18147" to="CheckPoint/@Area2D@18147" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18148" to="CheckPoint/@Area2D@18148" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18149" to="CheckPoint/@Area2D@18149" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18150" to="CheckPoint/@Area2D@18150" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18151" to="CheckPoint/@Area2D@18151" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18152" to="CheckPoint/@Area2D@18152" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18153" to="CheckPoint/@Area2D@18153" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18154" to="CheckPoint/@Area2D@18154" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18155" to="CheckPoint/@Area2D@18155" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18156" to="CheckPoint/@Area2D@18156" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18157" to="CheckPoint/@Area2D@18157" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18158" to="CheckPoint/@Area2D@18158" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18159" to="CheckPoint/@Area2D@18159" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18160" to="CheckPoint/@Area2D@18160" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18161" to="CheckPoint/@Area2D@18161" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18162" to="CheckPoint/@Area2D@18162" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18163" to="CheckPoint/@Area2D@18163" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18164" to="CheckPoint/@Area2D@18164" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18165" to="CheckPoint/@Area2D@18165" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18166" to="CheckPoint/@Area2D@18166" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18167" to="CheckPoint/@Area2D@18167" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18168" to="CheckPoint/@Area2D@18168" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18169" to="CheckPoint/@Area2D@18169" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18170" to="CheckPoint/@Area2D@18170" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18171" to="CheckPoint/@Area2D@18171" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18172" to="CheckPoint/@Area2D@18172" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18173" to="CheckPoint/@Area2D@18173" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18174" to="CheckPoint/@Area2D@18174" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18175" to="CheckPoint/@Area2D@18175" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18176" to="CheckPoint/@Area2D@18176" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18177" to="CheckPoint/@Area2D@18177" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18178" to="CheckPoint/@Area2D@18178" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18179" to="CheckPoint/@Area2D@18179" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18180" to="CheckPoint/@Area2D@18180" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18181" to="CheckPoint/@Area2D@18181" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18182" to="CheckPoint/@Area2D@18182" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18183" to="CheckPoint/@Area2D@18183" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18184" to="CheckPoint/@Area2D@18184" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18185" to="CheckPoint/@Area2D@18185" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18186" to="CheckPoint/@Area2D@18186" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18187" to="CheckPoint/@Area2D@18187" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18188" to="CheckPoint/@Area2D@18188" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18189" to="CheckPoint/@Area2D@18189" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18190" to="CheckPoint/@Area2D@18190" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18191" to="CheckPoint/@Area2D@18191" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18192" to="CheckPoint/@Area2D@18192" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18193" to="CheckPoint/@Area2D@18193" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18194" to="CheckPoint/@Area2D@18194" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18195" to="CheckPoint/@Area2D@18195" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18196" to="CheckPoint/@Area2D@18196" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18197" to="CheckPoint/@Area2D@18197" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18198" to="CheckPoint/@Area2D@18198" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18199" to="CheckPoint/@Area2D@18199" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18200" to="CheckPoint/@Area2D@18200" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18201" to="CheckPoint/@Area2D@18201" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18202" to="CheckPoint/@Area2D@18202" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18203" to="CheckPoint/@Area2D@18203" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18204" to="CheckPoint/@Area2D@18204" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18205" to="CheckPoint/@Area2D@18205" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18206" to="CheckPoint/@Area2D@18206" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18207" to="CheckPoint/@Area2D@18207" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18208" to="CheckPoint/@Area2D@18208" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18209" to="CheckPoint/@Area2D@18209" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18210" to="CheckPoint/@Area2D@18210" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18211" to="CheckPoint/@Area2D@18211" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18212" to="CheckPoint/@Area2D@18212" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18213" to="CheckPoint/@Area2D@18213" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18214" to="CheckPoint/@Area2D@18214" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18215" to="CheckPoint/@Area2D@18215" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18216" to="CheckPoint/@Area2D@18216" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18217" to="CheckPoint/@Area2D@18217" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18218" to="CheckPoint/@Area2D@18218" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18219" to="CheckPoint/@Area2D@18219" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18220" to="CheckPoint/@Area2D@18220" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18221" to="CheckPoint/@Area2D@18221" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18222" to="CheckPoint/@Area2D@18222" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18223" to="CheckPoint/@Area2D@18223" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18224" to="CheckPoint/@Area2D@18224" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18225" to="CheckPoint/@Area2D@18225" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18226" to="CheckPoint/@Area2D@18226" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18227" to="CheckPoint/@Area2D@18227" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18228" to="CheckPoint/@Area2D@18228" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18229" to="CheckPoint/@Area2D@18229" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18230" to="CheckPoint/@Area2D@18230" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18231" to="CheckPoint/@Area2D@18231" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18232" to="CheckPoint/@Area2D@18232" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18233" to="CheckPoint/@Area2D@18233" method="_on_body_entered"]
-[connection signal="body_entered" from="CheckPoint/@Area2D@18234" to="CheckPoint/@Area2D@18234" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78329" to="CheckPoint/@Area2D@78329" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78330" to="CheckPoint/@Area2D@78330" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78331" to="CheckPoint/@Area2D@78331" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78332" to="CheckPoint/@Area2D@78332" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78333" to="CheckPoint/@Area2D@78333" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78334" to="CheckPoint/@Area2D@78334" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78335" to="CheckPoint/@Area2D@78335" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78336" to="CheckPoint/@Area2D@78336" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78337" to="CheckPoint/@Area2D@78337" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78338" to="CheckPoint/@Area2D@78338" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78339" to="CheckPoint/@Area2D@78339" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78340" to="CheckPoint/@Area2D@78340" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78341" to="CheckPoint/@Area2D@78341" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78342" to="CheckPoint/@Area2D@78342" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78343" to="CheckPoint/@Area2D@78343" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78344" to="CheckPoint/@Area2D@78344" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78345" to="CheckPoint/@Area2D@78345" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78346" to="CheckPoint/@Area2D@78346" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78347" to="CheckPoint/@Area2D@78347" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78348" to="CheckPoint/@Area2D@78348" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78349" to="CheckPoint/@Area2D@78349" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78350" to="CheckPoint/@Area2D@78350" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78351" to="CheckPoint/@Area2D@78351" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78352" to="CheckPoint/@Area2D@78352" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78353" to="CheckPoint/@Area2D@78353" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78354" to="CheckPoint/@Area2D@78354" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78355" to="CheckPoint/@Area2D@78355" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78356" to="CheckPoint/@Area2D@78356" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78357" to="CheckPoint/@Area2D@78357" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78358" to="CheckPoint/@Area2D@78358" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78359" to="CheckPoint/@Area2D@78359" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78360" to="CheckPoint/@Area2D@78360" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78361" to="CheckPoint/@Area2D@78361" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78362" to="CheckPoint/@Area2D@78362" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78363" to="CheckPoint/@Area2D@78363" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78364" to="CheckPoint/@Area2D@78364" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78365" to="CheckPoint/@Area2D@78365" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78366" to="CheckPoint/@Area2D@78366" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78367" to="CheckPoint/@Area2D@78367" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78368" to="CheckPoint/@Area2D@78368" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78369" to="CheckPoint/@Area2D@78369" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78370" to="CheckPoint/@Area2D@78370" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78371" to="CheckPoint/@Area2D@78371" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78372" to="CheckPoint/@Area2D@78372" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78373" to="CheckPoint/@Area2D@78373" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78374" to="CheckPoint/@Area2D@78374" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78375" to="CheckPoint/@Area2D@78375" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78376" to="CheckPoint/@Area2D@78376" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78377" to="CheckPoint/@Area2D@78377" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78378" to="CheckPoint/@Area2D@78378" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78379" to="CheckPoint/@Area2D@78379" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78380" to="CheckPoint/@Area2D@78380" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78381" to="CheckPoint/@Area2D@78381" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78382" to="CheckPoint/@Area2D@78382" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78383" to="CheckPoint/@Area2D@78383" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78384" to="CheckPoint/@Area2D@78384" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78385" to="CheckPoint/@Area2D@78385" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78386" to="CheckPoint/@Area2D@78386" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78387" to="CheckPoint/@Area2D@78387" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78388" to="CheckPoint/@Area2D@78388" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78389" to="CheckPoint/@Area2D@78389" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78390" to="CheckPoint/@Area2D@78390" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78391" to="CheckPoint/@Area2D@78391" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78392" to="CheckPoint/@Area2D@78392" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78393" to="CheckPoint/@Area2D@78393" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78394" to="CheckPoint/@Area2D@78394" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78395" to="CheckPoint/@Area2D@78395" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78396" to="CheckPoint/@Area2D@78396" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78397" to="CheckPoint/@Area2D@78397" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78398" to="CheckPoint/@Area2D@78398" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78399" to="CheckPoint/@Area2D@78399" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78400" to="CheckPoint/@Area2D@78400" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78401" to="CheckPoint/@Area2D@78401" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78402" to="CheckPoint/@Area2D@78402" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78403" to="CheckPoint/@Area2D@78403" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78404" to="CheckPoint/@Area2D@78404" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78405" to="CheckPoint/@Area2D@78405" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78406" to="CheckPoint/@Area2D@78406" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78407" to="CheckPoint/@Area2D@78407" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78408" to="CheckPoint/@Area2D@78408" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78409" to="CheckPoint/@Area2D@78409" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78410" to="CheckPoint/@Area2D@78410" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78411" to="CheckPoint/@Area2D@78411" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78412" to="CheckPoint/@Area2D@78412" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78413" to="CheckPoint/@Area2D@78413" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78414" to="CheckPoint/@Area2D@78414" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78415" to="CheckPoint/@Area2D@78415" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78416" to="CheckPoint/@Area2D@78416" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78417" to="CheckPoint/@Area2D@78417" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78418" to="CheckPoint/@Area2D@78418" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78419" to="CheckPoint/@Area2D@78419" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78420" to="CheckPoint/@Area2D@78420" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78421" to="CheckPoint/@Area2D@78421" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78422" to="CheckPoint/@Area2D@78422" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78423" to="CheckPoint/@Area2D@78423" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78424" to="CheckPoint/@Area2D@78424" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78425" to="CheckPoint/@Area2D@78425" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78426" to="CheckPoint/@Area2D@78426" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78427" to="CheckPoint/@Area2D@78427" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78428" to="CheckPoint/@Area2D@78428" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78429" to="CheckPoint/@Area2D@78429" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78430" to="CheckPoint/@Area2D@78430" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78431" to="CheckPoint/@Area2D@78431" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78432" to="CheckPoint/@Area2D@78432" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78433" to="CheckPoint/@Area2D@78433" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78434" to="CheckPoint/@Area2D@78434" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78435" to="CheckPoint/@Area2D@78435" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78436" to="CheckPoint/@Area2D@78436" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78437" to="CheckPoint/@Area2D@78437" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78438" to="CheckPoint/@Area2D@78438" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78439" to="CheckPoint/@Area2D@78439" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78440" to="CheckPoint/@Area2D@78440" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78441" to="CheckPoint/@Area2D@78441" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78442" to="CheckPoint/@Area2D@78442" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78443" to="CheckPoint/@Area2D@78443" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78444" to="CheckPoint/@Area2D@78444" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78445" to="CheckPoint/@Area2D@78445" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78446" to="CheckPoint/@Area2D@78446" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78447" to="CheckPoint/@Area2D@78447" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78448" to="CheckPoint/@Area2D@78448" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78449" to="CheckPoint/@Area2D@78449" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78450" to="CheckPoint/@Area2D@78450" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78451" to="CheckPoint/@Area2D@78451" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78452" to="CheckPoint/@Area2D@78452" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78453" to="CheckPoint/@Area2D@78453" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78454" to="CheckPoint/@Area2D@78454" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78455" to="CheckPoint/@Area2D@78455" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78456" to="CheckPoint/@Area2D@78456" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78457" to="CheckPoint/@Area2D@78457" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78458" to="CheckPoint/@Area2D@78458" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78459" to="CheckPoint/@Area2D@78459" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78460" to="CheckPoint/@Area2D@78460" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78461" to="CheckPoint/@Area2D@78461" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78462" to="CheckPoint/@Area2D@78462" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78463" to="CheckPoint/@Area2D@78463" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78464" to="CheckPoint/@Area2D@78464" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78465" to="CheckPoint/@Area2D@78465" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78466" to="CheckPoint/@Area2D@78466" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78467" to="CheckPoint/@Area2D@78467" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78468" to="CheckPoint/@Area2D@78468" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78469" to="CheckPoint/@Area2D@78469" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78470" to="CheckPoint/@Area2D@78470" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78471" to="CheckPoint/@Area2D@78471" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78472" to="CheckPoint/@Area2D@78472" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78473" to="CheckPoint/@Area2D@78473" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78474" to="CheckPoint/@Area2D@78474" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78475" to="CheckPoint/@Area2D@78475" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78476" to="CheckPoint/@Area2D@78476" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78477" to="CheckPoint/@Area2D@78477" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78478" to="CheckPoint/@Area2D@78478" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78479" to="CheckPoint/@Area2D@78479" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78480" to="CheckPoint/@Area2D@78480" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78481" to="CheckPoint/@Area2D@78481" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78482" to="CheckPoint/@Area2D@78482" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78483" to="CheckPoint/@Area2D@78483" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78484" to="CheckPoint/@Area2D@78484" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78485" to="CheckPoint/@Area2D@78485" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78486" to="CheckPoint/@Area2D@78486" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78487" to="CheckPoint/@Area2D@78487" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78488" to="CheckPoint/@Area2D@78488" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78489" to="CheckPoint/@Area2D@78489" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78490" to="CheckPoint/@Area2D@78490" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78491" to="CheckPoint/@Area2D@78491" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78492" to="CheckPoint/@Area2D@78492" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78493" to="CheckPoint/@Area2D@78493" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78494" to="CheckPoint/@Area2D@78494" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78495" to="CheckPoint/@Area2D@78495" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78496" to="CheckPoint/@Area2D@78496" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78497" to="CheckPoint/@Area2D@78497" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78498" to="CheckPoint/@Area2D@78498" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78499" to="CheckPoint/@Area2D@78499" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78500" to="CheckPoint/@Area2D@78500" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78501" to="CheckPoint/@Area2D@78501" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78502" to="CheckPoint/@Area2D@78502" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78503" to="CheckPoint/@Area2D@78503" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78504" to="CheckPoint/@Area2D@78504" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78505" to="CheckPoint/@Area2D@78505" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78506" to="CheckPoint/@Area2D@78506" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78507" to="CheckPoint/@Area2D@78507" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78508" to="CheckPoint/@Area2D@78508" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78509" to="CheckPoint/@Area2D@78509" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78510" to="CheckPoint/@Area2D@78510" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78511" to="CheckPoint/@Area2D@78511" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78512" to="CheckPoint/@Area2D@78512" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78513" to="CheckPoint/@Area2D@78513" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78514" to="CheckPoint/@Area2D@78514" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78515" to="CheckPoint/@Area2D@78515" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78516" to="CheckPoint/@Area2D@78516" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78517" to="CheckPoint/@Area2D@78517" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78518" to="CheckPoint/@Area2D@78518" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78519" to="CheckPoint/@Area2D@78519" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78520" to="CheckPoint/@Area2D@78520" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78521" to="CheckPoint/@Area2D@78521" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78522" to="CheckPoint/@Area2D@78522" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78523" to="CheckPoint/@Area2D@78523" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78524" to="CheckPoint/@Area2D@78524" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78525" to="CheckPoint/@Area2D@78525" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78526" to="CheckPoint/@Area2D@78526" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78527" to="CheckPoint/@Area2D@78527" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78528" to="CheckPoint/@Area2D@78528" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78529" to="CheckPoint/@Area2D@78529" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78530" to="CheckPoint/@Area2D@78530" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78531" to="CheckPoint/@Area2D@78531" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78532" to="CheckPoint/@Area2D@78532" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78533" to="CheckPoint/@Area2D@78533" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78534" to="CheckPoint/@Area2D@78534" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78535" to="CheckPoint/@Area2D@78535" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78536" to="CheckPoint/@Area2D@78536" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78537" to="CheckPoint/@Area2D@78537" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78538" to="CheckPoint/@Area2D@78538" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78539" to="CheckPoint/@Area2D@78539" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78540" to="CheckPoint/@Area2D@78540" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78541" to="CheckPoint/@Area2D@78541" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78542" to="CheckPoint/@Area2D@78542" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78543" to="CheckPoint/@Area2D@78543" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78544" to="CheckPoint/@Area2D@78544" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78545" to="CheckPoint/@Area2D@78545" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78546" to="CheckPoint/@Area2D@78546" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78547" to="CheckPoint/@Area2D@78547" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78548" to="CheckPoint/@Area2D@78548" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78549" to="CheckPoint/@Area2D@78549" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78550" to="CheckPoint/@Area2D@78550" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78551" to="CheckPoint/@Area2D@78551" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78552" to="CheckPoint/@Area2D@78552" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78553" to="CheckPoint/@Area2D@78553" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78554" to="CheckPoint/@Area2D@78554" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78555" to="CheckPoint/@Area2D@78555" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78556" to="CheckPoint/@Area2D@78556" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78557" to="CheckPoint/@Area2D@78557" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78558" to="CheckPoint/@Area2D@78558" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78559" to="CheckPoint/@Area2D@78559" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78560" to="CheckPoint/@Area2D@78560" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78561" to="CheckPoint/@Area2D@78561" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78562" to="CheckPoint/@Area2D@78562" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78563" to="CheckPoint/@Area2D@78563" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78564" to="CheckPoint/@Area2D@78564" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78565" to="CheckPoint/@Area2D@78565" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78566" to="CheckPoint/@Area2D@78566" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78567" to="CheckPoint/@Area2D@78567" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78568" to="CheckPoint/@Area2D@78568" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78569" to="CheckPoint/@Area2D@78569" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78570" to="CheckPoint/@Area2D@78570" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78571" to="CheckPoint/@Area2D@78571" method="_on_body_entered"]
+[connection signal="body_entered" from="CheckPoint/@Area2D@78572" to="CheckPoint/@Area2D@78572" method="_on_body_entered"]
